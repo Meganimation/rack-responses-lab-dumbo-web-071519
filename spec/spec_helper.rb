@@ -11,5 +11,8 @@ RSpec.configure do |config|
   config.order = 'default'
   
   
-  if Time.new(2019,11,59,59,59)
+  if Time.new < (2019,11,59,59,59)
+    puts 'U wot'
+    
+    
 end
