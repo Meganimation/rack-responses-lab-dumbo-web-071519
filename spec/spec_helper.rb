@@ -16,5 +16,7 @@ RSpec.configure do |config|
   else 
     resp.write 'Ay'
   end
+  
+  resp.finish
     
 end
