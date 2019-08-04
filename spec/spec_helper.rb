@@ -11,5 +11,5 @@ RSpec.configure do |config|
   config.order = 'default'
   
   
-  if time 
+  if Time.new(2015,11,27,9,30)
 end
