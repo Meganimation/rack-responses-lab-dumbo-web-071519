@@ -11,7 +11,9 @@ RSpec.configure do |config|
   config.order = 'default'
   
   
-  if Time.new <= (2019,11,59,59,59) && >= (2019,11,59,59,59)
+  t = Time.new
+  
+  if t.hour <= (2019,11,59,59,59) && >= (2019,11,59,59,59)
     resp.write 'U wot'
   else 
     resp.write 'Ay'
